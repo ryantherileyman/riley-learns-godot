@@ -1,14 +1,18 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/textures/title-coin-collector.png" type="Texture" id=1]
 [ext_resource path="res://assets/fonts/MenuFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://scenes/MainMenu.gd" type="Script" id=3]
+[ext_resource path="res://assets/music/splash-screen-enter-the-party-loop.ogg" type="AudioStream" id=4]
 
 [node name="RootContainer" type="ColorRect"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color( 0.12549, 0.0784314, 0.0313726, 1 )
 script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchor_right = 1.0
@@ -44,4 +48,9 @@ margin_right = 1300.0
 margin_bottom = 97.0
 custom_fonts/font = ExtResource( 2 )
 text = "Exit Game"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -20.0
+autoplay = true
 [connection signal="pressed" from="MarginContainer/SplashSceneContainer/MainMenu/ExitGameButton" to="." method="_on_ExitGameButton_pressed"]

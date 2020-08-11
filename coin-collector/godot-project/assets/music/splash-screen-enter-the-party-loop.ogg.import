@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/splash-screen-enter-the-party-loop.ogg-b2bfec94873d5e5a8fe7b14badf4ba5f.oggstr"
+
+[deps]
+
+source_file="res://assets/music/splash-screen-enter-the-party-loop.ogg"
+dest_files=[ "res://.import/splash-screen-enter-the-party-loop.ogg-b2bfec94873d5e5a8fe7b14badf4ba5f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
